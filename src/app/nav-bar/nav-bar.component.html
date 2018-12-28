@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation Bar Library Management System</title>
+    <!-- <link rel="stylesheet" href="nav.component.css"> -->
+</head>
+<body>
+  
+      <div class="container"> <!-- container having the menu bar  -->
+        <nav>
+          <input type="checkbox" id="nav" class="hidden"> 
+          <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+          </label>
+        <!-- <div class="logo"> class having the logo  -->
+          <!-- <a href="#link" Library Management System></a> -->
+        <!-- </div> -->
+        <div class="nav-wrapper">  <!-- class having the menu bar items  -->
+          <ul> <!-- Menu Bar  -->
+            <li><a routerLink="/add-book">Add Book</a></li>
+            <li><a routerLink="/add-dvd">Add DVD</a></li>
+            <li><a routerLink="/delete-item">Delete Item</a></li>
+            <li><a routerLink="/borrow">Borrow Library Item</a></li>
+            <li><a routerLink="/return-item">Return Library Item</a></li>
+            <li><a routerLink="/display">Display </a></li>
+            <li><a routerLink="/generate-item"> Report</a></li>  
+            <li><a routerLink="/search">Search</a></li>  
+          </ul>
+
+
+        </div>
+
+
+
+
+        
+
+        </nav>
+     
+      </div>
+      <router-outlet></router-outlet>
+
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Add DVD Item</h1>
+        
+        <hr>
+        
+        
+        <div class="divtable">
+       
+           
+            
+        <form>
+            <table cellspacing="10">
+            <tr>
+                <td> *Item Title :&nbsp;&nbsp;&nbsp;</td> 
+                <td><input type="text" name="title" placeholder="Name of the DVD" [(ngModel)]="title" required></td>
+                <td> *Sector    :&nbsp;&nbsp;&nbsp;</td>         
+                <td>  <input type="text" name="Sector" placeholder="Sector of the Book" [(ngModel)]="sector" required></td>
+                <td>*Published Date     :&nbsp;&nbsp;&nbsp;</td>                
+                <td>  <input type="text" name="publisheddate" placeholder="Published Date" [(ngModel)] = "pubDate"required> </td>
+            </tr>
+      
+           
+           <tr>
+            <td>*ISBN   :&nbsp;&nbsp;&nbsp;</td>                
+            <td> <input type="number" name="ISBN" placeholder="ISBN" required [(ngModel)]="isbn" > </td>
+            <td>*Publisher   :&nbsp;&nbsp;&nbsp;</td>                
+            <td> <input type="text" name="publisher" placeholder="Publisher" [(ngModel)]="publisher" required> </td>      
+            <td>*Available Languages: &nbsp;&nbsp;&nbsp;</td>                
+            <td>  <input type="text" name="availablelanguages" placeholder="Available Languages" [(ngModel)]="availableLanguages" required> </td>
+           </tr> 
+           
+            
+            <tr> 
+               
+                <td>*Available Subtitles      :&nbsp;&nbsp;&nbsp;</td>                
+                <td>  <input type="text" name="availablesubtitles" placeholder="Available Subtitles" [(ngModel)]="availableSubstitles" required> </td>
+                <td>*Producer      :&nbsp;&nbsp;&nbsp;</td>                
+                <td> <input type="text" name="producer" placeholder="Producer"  [(ngModel)]="producer" required> </td>
+                <td>*Actors      :&nbsp;&nbsp;&nbsp;</td>                
+                <td> <input type="text" name="actors" placeholder="Actors"  [(ngModel)]="actors" required > </td>    
+            </tr>
+                
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button   (click) ="adddvd()" class="buttonsubmit" type="submit" name="submit"> Submit </button></td>
+                <td><button class="buttonreset" type="reset" name="reset"> Reset </button></td>
+            </tr>
+        </table>    
+    </form>
+        </div>
+
+        <!-- used to show the http response in the html page -->
+        <h4>{{showResponse}}</h4>
+        
+        
+    </body>
+</html>

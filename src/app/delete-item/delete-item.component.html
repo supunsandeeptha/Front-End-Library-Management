@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Delete Book Item</h1>
+        
+        <hr>
+        
+        
+        <div class="divtable">
+       
+           
+            
+        <form>
+            <table cellspacing="10">
+            
+
+            <tr>
+                <td>*Book ISBN :&nbsp;&nbsp;&nbsp;</td>  
+                <td> <input type="number" name="bookisbn" placeholder="ISBN of Book"  [(ngModel)] = "bookIsbn"></td>  
+            </tr>
+
+           
+            <tr>
+                <td><button (click) ="deleteBook()" class="buttonsubmit" type="submit" name="submit"> Delete</button></td>
+                
+                <td><button class="buttonreset" type="reset" name="reset"> Reset </button></td>
+            </tr>
+        </table>    
+        </form>
+        </div>
+        <h4>{{showResponse}}</h4>
+        <app-delete-dvd></app-delete-dvd>
+    </body>
+</html>

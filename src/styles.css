@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+input[type="text"],[type="email"] ,[type="number"],select {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color:rgba(134, 179, 249, 0.2);
+}
+@font-face {
+   font-family:alex;
+   src: url(KaushanScript-Regular.otf);
+}
+
+@font-face {
+  font-family:supun;
+  src: url(Nobile-Italic.ttf);
+}
+
+.divtable {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    overflow-x:auto;
+    overflow-y: auto;
+    
+    }
+    
+ h1{
+     font-family: alex;
+      color: #8423a8;
+      font-size: 2.7em;
+    }
+
+ h4{
+   font-family: supun;
+   color: #22156b;
+   font-size: 1.9em;
+
+
+    }
+    
+ p{
+    font-size: 20px;
+  }
+
+  
+  
+  
+  .buttonsubmit {
+    background-color: #4CAF50;
+    width: 120px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 12px;
+    display:block;
+    margin: 0 auto;
+    margin-left: 90px; 
+    
+  }
+
+
+  .buttonsubmit:hover {
+    background-color:#268c04;
+    transition: 0.4s;
+    color: white;
+  }
+
+   .buttonreset {
+    background-color: #4CAF50;
+    width: 120px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 12px;
+    display:block;
+    margin: 0 auto;
+    /* margin-left: 180px; */
+    
+  }
+
+  .buttonreset:hover {
+    background-color: red;
+    transition: 0.6s;
+    color: white;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    width: 120px;
+    border: none;
+    color: white;
+    padding:9px 9px 9px 9px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 10px 6px 10px; 
+    cursor: pointer;
+    border-radius: 9px;
+    display:block;
+    /* margin: 10px 10px 10px 10px auto; */
+    /* margin-left: 90px;  */
+    
+  }
+  
+  .button:hover {
+    background-color: #008CBA;
+    color: white;
+    transition: 0.6s;
+    transform: scale(1.1); 
+}
+
+table{
+  overflow-x:auto;
+}
+
+form{
+  overflow-x:auto;
+}
+
+
+
+#items {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#items td, #items th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#items tr:nth-child(even){background-color: #f2f2f2;}
+
+#items tr:hover {background-color: #ddd;}
+
+#items th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

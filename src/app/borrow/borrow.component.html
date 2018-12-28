@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Borrow Library Item</h1>
+        
+        <hr>
+        
+        
+        <div class="divtable">
+       
+           
+            
+        <form>
+            <table cellspacing="10">
+            <tr>
+                 <td>*ISBN :&nbsp;&nbsp;&nbsp;</td>  
+                <td> <input type="number" name="isbn" placeholder="ISBN" [(ngModel)]="isbn"   required ></td>  
+                
+                <td> *Type:&nbsp;&nbsp;&nbsp;</td> 
+                <td><input type="text" name="title" placeholder="Title of the Book" [(ngModel)]="itemType" required></td>
+                
+            </tr>
+
+           <tr>
+              <td>*Borrower Name :&nbsp;&nbsp;&nbsp;</td>  
+              <td> <input type="text" name="readername" placeholder="Person Who borrows the book" [(ngModel)]="borrowPerson" required></td> 
+              <td>*Borrowed Date :&nbsp;&nbsp;&nbsp;</td>  
+              <td> <input type="text" name="borrowedDate" placeholder="dd/mm/yyyy" [(ngModel)]="borrowDate" required></td>   
+
+           </tr>
+           <tr>
+                
+                <td><button (click)="borrowItem()" class="buttonsubmit"> Borrow </button></td>
+                
+                <td><button class="buttonreset" type="reset" name="reset"> Reset </button></td>
+            </tr>
+        </table>    
+        </form>
+        </div>
+        
+        <h4>{{showResponse}}</h4>
+        
+    </body>
+</html>

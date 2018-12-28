@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Display Library Item</h1>
+        
+        <hr>
+        
+        
+        <div class="divtable">
+       
+           
+            
+        <form>
+            <table cellspacing="10">
+            <tr>
+                <td> *Type of the Item :&nbsp;&nbsp;&nbsp;</td> 
+                <td><input type="text" name="itemtype" placeholder="Type of Item"  [(ngModel)] = "itemType" required></td>
+                
+            </tr>
+
+            
+           
+            <tr>
+                <td><button (click) ="display()" class="buttonsubmit" type="submit" name="displayitems"> Display </button></td>
+                
+                <td><button class="buttonreset" type="reset" name="reset"> Reset </button></td>
+            </tr>
+        </table>    
+        </form>
+        </div>
+
+
+        <div id="items" *ngFor="let x of array"> 
+            <table cellpadding="0" cellspacing="0" border="1">
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Sector</th>
+                    <th>Publisher</th>
+                    <th>Current reader</th>
+                    <th>No of Pages</th>
+                    <th>Authors</th>
+                    <th>Availability</th>
+                </tr>
+
+                <tr>
+                    <td><p>{{x.isbn}}</p></td>
+                    <td><p>{{x.title}}</p></td>
+                    <td><p>{{x.sector}}</p></td>
+                    <td><p>{{x.publisher}}</p></td>
+                    <td><p>{{x.currentReader}}</p></td>
+                    <td><p>{{x.noOfPages}}</p></td>
+                    <td><p>{{x.authors}}</p></td>
+                    <td><ng-container *ngIf="x.currentReader==null; else notAvailable">
+                        <p style="color:Blue">Available</p>
+                    </ng-container>
+                    <ng-template #notAvailable>
+                        <p style="color:red">Not Available</p>
+                    </ng-template>
+                    </td>
+                    
+                </tr>
+            </table>
+           
+        </div>
+        
+
+
+
+
+
+        
+    </body>
+</html>

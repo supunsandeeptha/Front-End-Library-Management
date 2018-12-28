@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Search Item</h1>
+        
+        <hr>
+        
+        
+        <div class="divtable">
+       
+           
+            
+        <form>
+            <table cellspacing="10">
+            <tr>
+                <td>*Item Type :&nbsp;&nbsp;&nbsp;</td>  
+                <td> <input type="text" name="itemType" placeholder="itemType" [(ngModel)]="itemType"   required ></td>     
+                <td>*ISBN :&nbsp;&nbsp;&nbsp;</td>  
+                <td> <input type="number" name="ISBN" placeholder="ISBN" [(ngModel)]="isbn"   required ></td>     
+            </tr>
+
+           
+           <tr>
+                
+                <td><button (click)="search()" class="buttonsubmit"> Search </button></td>
+                
+                <td><button class="buttonreset" type="reset" name="reset"> Reset </button></td>
+            </tr>
+        </table>    
+        </form>
+        </div>
+
+        
+        <!-- <h4>{{showResponse.authors}}</h4> -->
+
+        <div id="items"> 
+            <table cellpadding="0" cellspacing="0" border="1">
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Sector</th>
+                    <th>Publisher</th>
+                    <th>Current reader</th>
+                    <th>No of Pages</th>
+                    <th>Authors</th>
+                    
+                </tr>
+
+                <tr>
+                    <td><p>{{showResponse.isbn}}</p></td>
+                    <td><p>{{showResponse.title}}</p></td>
+                    <td><p>{{showResponse.sector}}</p></td>
+                    <td><p>{{showResponse.publisher}}</p></td>
+                    <td><p>{{showResponse.currentReader}}</p></td>
+                    <td><p>{{showResponse.noOfPages}}</p></td>
+                    <td><p>{{showResponse.authors}}</p></td>
+                    
+                    
+                </tr>
+            </table>
+           
+        </div>
+        
+        
+       
+        
+    </body>
+</html>

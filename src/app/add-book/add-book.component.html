@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+       
+    
+    </head>
+    <body>
+        <h1>Add New Book Item</h1>
+        
+        <hr>
+        
+        
+        <div class="divtable">
+       
+           
+            
+        <form>
+            <table cellspacing="10">
+            <tr>
+                <td> *Item Title :&nbsp;&nbsp;&nbsp;</td> 
+                <td><input type="text" name="title" placeholder="Name of the Book" [(ngModel)]="Title"  required></td>
+                <td> *Sector    :&nbsp;&nbsp;&nbsp;</td>         
+                <td>  <input type="text" name="sector" placeholder="Sector of the Book" [(ngModel)]="sector" required></td>
+                <td>*Published Date :&nbsp;&nbsp;&nbsp;</td>                
+                <td>  <input type="text" name="pubDate" placeholder="pubDate" [(ngModel)]="pubDate" required> </td>
+            </tr>
+      
+           
+           <tr>
+            <td>*ISBN   :&nbsp;&nbsp;&nbsp;</td>                
+            <td> <input type="number" name="isbn" placeholder="isbn" [(ngModel)]="isbn" required > </td>
+            <td>*Publisher   :&nbsp;&nbsp;&nbsp;</td>                
+            <td> <input type="text" name="publisher" placeholder="Publisher" [(ngModel)]="publisher" required> </td>
+            
+               
+                
+           </tr> 
+           
+            
+            <tr>   
+                <td>*Authors      :&nbsp;&nbsp;&nbsp;</td>                
+                <td>  <input type="text" name="authors" placeholder="authors" [(ngModel)]="authors" required> </td>
+                <td>*No Of Pages    :&nbsp;&nbsp;&nbsp;</td>                
+                <td> <input type="number" name="noOfPages" placeholder="noOfPages"  [(ngModel)]="noOfPages" required> </td>
+            </tr>
+
+           
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button (click) ="add()" class="buttonsubmit"> Submit </button> </td>
+                <td><button class="buttonreset" type="reset" name="reset"> Reset </button></td>
+                
+            </tr>
+           
+        </table>    
+       
+    </form>
+        </div>
+        
+        <!-- used to show the http respone in the html page -->
+       <h4>{{showResponse}}</h4> 
+        
+        
+    </body>
+</html>
